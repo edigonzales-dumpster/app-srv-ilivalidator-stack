@@ -1,0 +1,9 @@
+version: '3'
+services:
+  ilivalidator-web-service:
+    image: sogis/ilivalidator-web-service:latest
+    environment:
+      TZ: Europe/Zurich
+    ports:
+      - "8181:8888"
+    restart: always
